@@ -1,5 +1,5 @@
 {
-    "name": "pragmarx/google2fa-laravel",
+    "name": "canerdogan/google2fa-laravel",
     "description": "A One Time Password Authentication package, compatible with Google Authenticator.",
     "keywords": ["authentication", "two factor authentication", "google2fa", "laravel"],
     "license": "BSD-3-Clause",
@@ -33,10 +33,10 @@
         },
         "laravel": {
             "providers": [
-                "PragmaRX\\Google2FALaravel\\ServiceProvider"
+                "PragmaRX\\Google2FALaravel\\Google2FAServiceProvider"
             ],
             "aliases": {
-                "Google2FA": "PragmaRX\\Google2FALaravel\\Facade"
+                "Google2FA": "PragmaRX\\Google2FALaravel\\Support\\Facades\\Google2FA"
             }
         }
     },

@@ -2,10 +2,10 @@
 
 namespace PragmaRX\Google2FALaravel;
 
-use Illuminate\Support\Facades\Facade as IlluminateFacade;
+use Illuminate\Support\Facades\Facade;
 use PragmaRX\Google2FALaravel\Support\Authenticator;
 
-class Facade extends IlluminateFacade
+class Google2FA extends Facade
 {
     /**
      * Get the registered name of the component.

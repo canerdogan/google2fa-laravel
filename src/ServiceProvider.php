@@ -2,10 +2,10 @@
 
 namespace PragmaRX\Google2FALaravel;
 
-use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
+use Illuminate\Support\ServiceProvider;
 use PragmaRX\Google2FA\Google2FA;
 
-class ServiceProvider extends IlluminateServiceProvider
+class Google2FAServiceProvider extends ServiceProvider
 {
     /**
      * Indicates if loading of the provider is deferred.
