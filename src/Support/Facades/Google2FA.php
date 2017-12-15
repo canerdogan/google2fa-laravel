@@ -1,6 +1,6 @@
 <?php
 
-namespace PragmaRX\Google2FALaravel;
+namespace PragmaRX\Google2FALaravel\Support\Facades;
 
 use Illuminate\Support\Facades\Facade;
 use PragmaRX\Google2FALaravel\Support\Authenticator;
