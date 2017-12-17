@@ -26,4 +26,14 @@ class Google2FA extends Facade
     {
         (new Authenticator(request()))->logout();
     }
+
+    /**
+     * Get the registered name of the component.
+     *
+     * @return string
+     */
+    public static function login()
+    {
+        (new Authenticator(request()))->login();
+    }
 }

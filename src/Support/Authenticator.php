@@ -255,6 +255,14 @@ class Authenticator
     }
 
     /**
+     * OTP login.
+     */
+    public function login()
+    {
+        $this->storeAuthPassed();
+    }
+
+    /**
      * Update the current auth time.
      */
     protected function updateCurrentAuthTime()
