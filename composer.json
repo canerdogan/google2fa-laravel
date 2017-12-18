@@ -5,6 +5,12 @@
     "license": "BSD-3-Clause",
     "authors": [
         {
+            "name": "Can Erdogan",
+            "email": "can@canerdogan.net",
+            "homepage": "https://canerdogan.net",
+            "role": "CTO at Istanbay"
+        },
+        {
             "name": "Antonio Carlos Ribeiro",
             "email": "acr@antoniocarlosribeiro.com",
             "role": "Creator & Designer"
