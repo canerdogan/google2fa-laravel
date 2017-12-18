@@ -3,7 +3,8 @@
 namespace PragmaRX\Google2FALaravel;
 
 use Illuminate\Support\ServiceProvider;
-use PragmaRX\Google2FA\Google2FA;
+use PragmaRX\Google2FALaravel\Google2FA;
+use Illuminate\Support\Facades\Blade;
 
 class Google2FAServiceProvider extends ServiceProvider
 {
@@ -12,7 +13,7 @@ class Google2FAServiceProvider extends ServiceProvider
      *
      * @var bool
      */
-    protected $defer = true;
+    protected $defer = false;
 
     /**
      * Configure package paths.
@@ -42,6 +43,18 @@ class Google2FAServiceProvider extends ServiceProvider
     public function provides()
     {
         return ['pragmarx.google2fa'];
+    }
+
+    /**
+     * Perform post-registration booting of services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+	    Blade::if('google2fa', function () {
+		    return Google2FA::check();
+	    });
     }
 
     /**

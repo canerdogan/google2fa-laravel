@@ -9,7 +9,7 @@ class Middleware
 {
     public function handle($request, Closure $next)
     {
-        $authenticator = app(Authenticator::class)->boot($request);
+        $authenticator = Google2FA::auth();
 
         if ($authenticator->isAuthenticated()) {
             return $next($request);
